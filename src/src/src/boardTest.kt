@@ -7,7 +7,7 @@ fun main(){
 //   val rand = ListOf Random.nextInt(0,10)
     var shipX = arrayOf(1,2,3)
     var shipY = arrayOf(1,1,1)
-    var ship2X = arrayOf(2,2,2)
+    var ship2X = arrayOf(8,8,8)
     var ship2Y = arrayOf(2,3,4)
     var hit1 = 0
     var miss1 = 0
@@ -27,16 +27,27 @@ fun main(){
 //    var integerx:Int = reader.nextInt()
 //    point.x = integerx
 //    println(point.x)
-  println("       _______________")
-    println("  8 |_|_|_|_|_|_|_|_|")
-    println("  7 |_|_|_|_|_|_|_|_|")
-    println("  6 |_|_|_|_|_|_|_|_|")
-    println("  5 |_|_|_|_|_|_|_|_|")
-    println("  4 |_|_|_|_|_|_|_|_|")
-    println("  3 |_|_|_|_|_|_|_|_|")
-    println("  2 |_|_|_|_|_|_|_|_|")
+    val eo = "#"
+  println("     _______________")
     println("  1 |_|_|_|_|_|_|_|_|")
+    println("  2 |_|_|_|_|_|_|_|_|")
+    println("  3 |_|_|_|_|_|_|_|_|")
+    println("  4 |_|_|_|_|_|_|_|_|")
+    println("  5 |_|_|_|_|_|_|_|_|")
+    println("  6 |_|_|_|_|_|_|_|_|")
+    println("  7 |_|_|_|_|_|_|_|_|")
+    println("  8 |_|_|_|_|_|_|_|_|")
     println("     1 2 3 4 5 6 7 8 ")
+
+    print("Enter a pointX: ")
+    var integerx:Int = reader.nextInt()
+    print("Enter a pointY: ")
+    var integery:Int = reader.nextInt()
+    println("$integerx and $integery")
+
+    var point = Board()
+    point.board(integerx,integery)
+
 
 //    while (b < 3 && d < 3) {
 //        print("Player 1 x coordinate: ");
@@ -117,4 +128,6 @@ fun main(){
 //        hit1 = 0
 //        hit2 = 0
 //    }
+
+
 }
